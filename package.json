@@ -1,0 +1,26 @@
+{
+  "name": "hy-compilers-language-support",
+  "displayName": "hy-compilers-language-support",
+  "description": "Provides basic syntax highlighting for the language implemented in HY Compilers 2024 course",
+  "author": "Veikko Suhonen",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "hy-compilers-lang",
+      "aliases": ["HY Compilers", "hy-compilers-lang"],
+      "extensions": [".hycs"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "hy-compilers-lang",
+      "scopeName": "source.hycs",
+      "path": "./syntaxes/hy-compilers-lang.tmLanguage.json"
+    }]
+  }
+}

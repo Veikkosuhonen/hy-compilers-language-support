@@ -1,0 +1,76 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "HY Compilers",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#literals"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.hy-compilers-lang",
+					"match": "\\b(var|if|then|while|do|return|break|continue|readonly|fun)\\b"
+				}
+			]
+		},
+		"literals": {
+			"patterns": [
+				{
+					"name": "constant.numeric.hy-compilers-lang",
+					"match": "\\b(\\d+(\\.\\d+)?)\\b"
+				},
+				{
+					"name": "constant.numeric.hy-compilers-lang",
+					"match": "\\b(true|false)\\b"
+				}
+			]
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.hy-compilers-lang",
+					"match": "\\b(\\+|-|\\*|/|=|==|!=|and|or|not)\\b"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.hy-compilers-lang",
+					"match": "//.*"
+				},
+				{
+					"name": "comment.block.hy-compilers-lang",
+					"begin": "/\\*",
+					"end": "\\*/"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.hy-compilers-lang",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.hy-compilers-lang",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.hycs"
+}
