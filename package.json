@@ -3,6 +3,7 @@
   "displayName": "hy-compilers-language-support",
   "description": "Provides basic syntax highlighting for the language implemented in HY Compilers 2024 course",
   "author": "Veikko Suhonen",
+  "publisher": "veikko-suhonen",
   "repository": {
     "type": "git",
     "url": "https://github.com/Veikkosuhonen/hy-compilers-language-support"
