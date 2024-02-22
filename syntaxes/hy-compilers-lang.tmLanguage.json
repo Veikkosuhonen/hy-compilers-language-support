@@ -23,7 +23,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.hy-compilers-lang",
-					"match": "\\b(var|if|then|while|do|return|break|continue|readonly|fun)\\b"
+					"match": "\\b(var|if|then|else|while|do|return|break|continue|readonly|fun)\\b"
 				}
 			]
 		},
