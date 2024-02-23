@@ -12,6 +12,9 @@
 			"include": "#literals"
 		},
 		{
+			"include": "#identifiers"
+		},
+		{
 			"include": "#comments"
 		},
 		{
@@ -36,6 +39,14 @@
 				{
 					"name": "constant.numeric.hy-compilers-lang",
 					"match": "\\b(true|false)\\b"
+				}
+			]
+		},
+		"identifiers": {
+			"patterns": [
+				{
+					"name": "support.type.hy-compilers-lang",
+					"match": ": \\w+"
 				}
 			]
 		},
