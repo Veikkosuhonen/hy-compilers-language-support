@@ -62,7 +62,7 @@
 			"patterns": [
 				{
 					"name": "comment.line.hy-compilers-lang",
-					"match": "//.*"
+					"match": "(//|#).*"
 				},
 				{
 					"name": "comment.block.hy-compilers-lang",
