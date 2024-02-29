@@ -19,6 +19,9 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#builtins"
 		}
 	],
 	"repository": {
@@ -54,7 +57,7 @@
 			"patterns": [
 				{
 					"name": "keyword.operator.hy-compilers-lang",
-					"match": "\\b(\\+|-|\\*|/|=|==|!=|and|or|not)\\b"
+					"match": "\\b(\\+|-|\\*|&|/|=|==|!=|and|or|not)\\b"
 				}
 			]
 		},
@@ -79,6 +82,14 @@
 				{
 					"name": "constant.character.escape.hy-compilers-lang",
 					"match": "\\\\."
+				}
+			]
+		},
+		"builtins": {
+			"patterns": [
+				{
+					"name": "support.function.hy-compilers-lang",
+					"match": "\\b(print_int|print_bool|read_int)\\b"
 				}
 			]
 		}
