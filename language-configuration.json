@@ -20,4 +20,8 @@
         ["{", "}"],
         ["(", ")"],
     ],
+    "indentationRules": {
+        "increaseIndentPattern": "^.*\\{[^}\"']*$|^.*\\([^\\)\"']*$",
+        "decreaseIndentPattern": "^\\s*(\\s*\\/[*].*[*]\\/\\s*)*[})]"
+    },
 }

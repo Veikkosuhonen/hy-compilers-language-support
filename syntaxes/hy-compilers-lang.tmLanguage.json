@@ -12,16 +12,19 @@
 			"include": "#literals"
 		},
 		{
+			"include": "#builtins"
+		},
+		{
 			"include": "#identifiers"
+		},
+		{
+			"include": "#types"
 		},
 		{
 			"include": "#comments"
 		},
 		{
 			"include": "#strings"
-		},
-		{
-			"include": "#builtins"
 		}
 	],
 	"repository": {
@@ -29,7 +32,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.hy-compilers-lang",
-					"match": "\\b(var|if|then|else|while|do|return|break|continue|readonly|fun)\\b"
+					"match": "\\b(var|if|then|else|while|do|return|break|continue|readonly|fun|and|or)\\b"
 				}
 			]
 		},
@@ -48,8 +51,16 @@
 		"identifiers": {
 			"patterns": [
 				{
-					"name": "support.type.hy-compilers-lang",
-					"match": ": \\w+"
+					"name": "variable.name.hy-compilers-lang",
+					"match": "\\b[a-zA-Z_]\\w*\\b"
+				}
+			]
+		},
+		"types": {
+			"patterns": [
+				{
+					"name": "entity.name.class.hy-compilers-lang",
+					"match": "\\b(Int|Bool|Unit)\\b"
 				}
 			]
 		},
@@ -57,7 +68,7 @@
 			"patterns": [
 				{
 					"name": "keyword.operator.hy-compilers-lang",
-					"match": "\\b(\\+|-|\\*|&|/|=|==|!=|and|or|not)\\b"
+					"match": "\\b(\\+|-|\\*|&|/|=|==|!=)\\b"
 				}
 			]
 		},
